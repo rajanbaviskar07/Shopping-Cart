@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <h2 class="heading" *ngIf="!userName">CHOOSE USER</h2>
+  <div class="user1" >
+    <img src="../../assets/Images/man.png"  height="90px" style="padding-bottom: 2px;" alt="img0">
+  </div>
+  <button class="btn btn-secondary sg" type="button" routerLink="/admin-login" *ngIf="!userName"><font size="5" style="color: white;">Login As Admin</font></button>
+  <button class="btn btn-secondary sg" type="button" routerLink="/login" *ngIf="!userName"><font size="5" style="color: white;">Login As User</font></button>
+  <div class="lg" *ngIf="userName">
+    <p>Logged In User: {{ userName }}</p>
+    <button class="btn btn-secondary lg" type="button" (click)="logout()">Logout</button>
+  </div>
+</div>
+<app-footer></app-footer>

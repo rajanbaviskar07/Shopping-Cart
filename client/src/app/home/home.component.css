@@ -1,0 +1,39 @@
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6%;
+}
+
+body {
+  background-color: #cfe09d;
+}
+
+
+.carousel-inner .carousel-item img {
+  height: 700px;
+}
+
+.heading ,.sub_head {
+  text-align: center;
+  margin: 20px;
+}
+
+.card {
+  padding: 20px;
+  margin: 30px;
+  background-color: gainsboro;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
